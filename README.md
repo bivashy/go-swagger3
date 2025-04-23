@@ -49,7 +49,8 @@ export PATH="$HOME/go/bin:$PATH"
 
 Notes - 
 - Pass schema-without-pkg flag as true if you want to generate schemas without package names
-- Pass generate-yaml as trus if you want to generate yaml spec file instead of json
+- Pass generate-yaml as true if you want to generate yaml spec file instead of json
+- Pass required-by-default as true if you want to mark the schema fields true without `required` tag
 
 ```
 
@@ -64,6 +65,7 @@ docker run -t --rm -v $(pwd):/app -w /app parvez3019/go-swagger3:latest --module
 Notes - 
 - Pass schema-without-pkg flag as true if you want to generate schemas without package names
 - Pass generate-yaml as trus if you want to generate yaml spec file instead of json
+- Pass required-by-default as true if you want to mark the schema fields true without `required` tag
 
 ```
 
