@@ -282,7 +282,11 @@
     "schemas": {
       "Headers": {
         "type": "object",
-        "required": ["Client-Version", "Client-Language", "Client-Platform"],
+        "required": [
+          "Client-Version",
+          "Client-Language",
+          "Client-Platform"
+        ],
         "properties": {
           "Client-Version": {
             "type": "string",
@@ -317,7 +321,9 @@
       },
       "Menu": {
         "type": "object",
-        "required": ["name"],
+        "required": [
+          "name"
+        ],
         "properties": {
           "name": {
             "type": "string"
@@ -327,11 +333,22 @@
       "OrderByEnum": {
         "type": "string",
         "example": "popular",
-        "enum": ["nearest", "popular", "new", "highest-rated"]
+        "enum": [
+          "nearest",
+          "popular",
+          "new",
+          "highest-rated"
+        ]
       },
       "Restaurant": {
         "type": "object",
-        "required": ["name", "city", "rating", "type", "menus"],
+        "required": [
+          "name",
+          "city",
+          "rating",
+          "type",
+          "menus"
+        ],
         "properties": {
           "name": {
             "type": "string"
@@ -349,7 +366,9 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["name"],
+              "required": [
+                "name"
+              ],
               "properties": {
                 "name": {
                   "type": "string"
@@ -361,7 +380,9 @@
       },
       "github.com.parvez3019.go-swagger3.handler.Bar": {
         "type": "object",
-        "required": ["barField"],
+        "required": [
+          "barField"
+        ],
         "properties": {
           "barField": {
             "type": "string"
@@ -370,7 +391,10 @@
       },
       "github.com.parvez3019.go-swagger3.handler.EmbeddedBar": {
         "type": "object",
-        "required": ["barField2", "barField"],
+        "required": [
+          "barField2",
+          "barField"
+        ],
         "properties": {
           "barField2": {
             "type": "string"
@@ -382,7 +406,10 @@
       },
       "github.com.parvez3019.go-swagger3.handler.ErrResponse": {
         "type": "object",
-        "required": ["statusCode", "message"],
+        "required": [
+          "statusCode",
+          "message"
+        ],
         "properties": {
           "statusCode": {
             "type": "integer"
@@ -394,7 +421,11 @@
       },
       "github.com.parvez3019.go-swagger3.handler.GetPogsResponse": {
         "type": "object",
-        "required": ["planograms", "field4", "field5"],
+        "required": [
+          "planograms",
+          "field4",
+          "field5"
+        ],
         "properties": {
           "planograms": {
             "type": "array",
@@ -414,7 +445,10 @@
       },
       "github.com.parvez3019.go-swagger3.handler.aliasValidationError": {
         "type": "object",
-        "required": ["statusCode", "errors"],
+        "required": [
+          "statusCode",
+          "errors"
+        ],
         "properties": {
           "statusCode": {
             "type": "integer"
@@ -481,7 +515,9 @@
       },
       "github.com.parvez3019.go-swagger3.model.CreateUserResponse": {
         "type": "object",
-        "required": ["user_id"],
+        "required": [
+          "user_id"
+        ],
         "properties": {
           "user_id": {
             "type": "string"
@@ -490,7 +526,12 @@
       },
       "github.com.parvez3019.go-swagger3.model.Filter": {
         "type": "object",
-        "required": ["rating", "type", "distance", "district_code"],
+        "required": [
+          "rating",
+          "type",
+          "distance",
+          "district_code"
+        ],
         "properties": {
           "rating": {
             "type": "integer"
@@ -508,13 +549,21 @@
       },
       "github.com.parvez3019.go-swagger3.model.GetRestaurantsResponse": {
         "type": "object",
-        "required": ["restaurants"],
+        "required": [
+          "restaurants"
+        ],
         "properties": {
           "restaurants": {
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["name", "city", "rating", "type", "menus"],
+              "required": [
+                "name",
+                "city",
+                "rating",
+                "type",
+                "menus"
+              ],
               "properties": {
                 "name": {
                   "type": "string"
@@ -532,7 +581,9 @@
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["name"],
+                    "required": [
+                      "name"
+                    ],
                     "properties": {
                       "name": {
                         "type": "string"
@@ -591,7 +642,10 @@
   },
   "security": [
     {
-      "AuthorizationHeader": ["read", "write"]
+      "AuthorizationHeader": [
+        "read",
+        "write"
+      ]
     }
   ]
 }
