@@ -45,6 +45,8 @@ func Test_GenerateExpectedSpecWithDefaultRequired(t *testing.T) {
 	diff, _ := jsondiff.Compare([]byte(LoadJSONAsString("test_data/spec/expected_with_required_default.json")),
 		[]byte(LoadJSONAsString("test_data/spec/actual.json")), &jsondiff.Options{})
 
+	actualJson := LoadJSONAsString("test_data/spec/actual.json")
+	fmt.Println("DEBUG: test_data/spec/actual.json content:\n", actualJson)
 	// assert the diff is FullMatch
 	assert.Equal(t, jsondiff.FullMatch, diff)
 }
